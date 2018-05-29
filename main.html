@@ -1,0 +1,47 @@
+<html lang="en">                                   <!-- starts HTML and specifies the language!-->
+   <head>                                          <!--container for metadata (data about data) and is placed between the <html> tag and the <body> tag!-->
+      <link rel='stylesheet' href='styles.css'>    <!--loads the styles.css file from the same folder !-->
+      <title>Favorite BR Game</title>                 <!--required in HTML documents and used to define the title of the document!-->
+   </head>                                         <!--container for all the head elements!-->
+   <body style ="background: url(https://wallpapercave.com/wp/wp2208669.png) ">
+      <center>
+         <img src="https://www.killping.com/blog/wp-content/uploads/2018/02/Battle-Royale-Games-2018-featured-1.jpg" border="0px" 
+               width="400px" height="100px" >
+      </center>
+      <br>
+      <br>
+      <center> <head> What is your favorite Battle Royale Game?</head> </center>
+      <center>
+         <form action='create.php' method = 'post'><!--needed to send info to php file !-->
+            <input type='text' placeholder='Full Name' name='Name' class="advancedSearchTextBox">
+            <select id='select' name='className'>
+                 <option value="PUBG" >PUBG</option>
+                 <option value="Darwin Project" >Darwin Project</option>
+                 <option value="Fortnite" >Fortnite</option>
+                 <option value="H1Z1" >H1Z1</option>
+                 <option value="Minecraft: Survival Games" >Minecraft Survival Games</option>
+                 <option value="RoS" >RoS</option>
+            </select>
+
+            
+            <input name = 'create' type = 'submit' value = 'Submit Info'>
+			 <!-- 
+           <input name = 'update' type = 'submit' value = 'Update Info'>  
+           <input name = 'del'    type = 'submit' value = 'Delete Info'>!-->
+         </form>
+         Find other peoples favorites!
+         <form action= 'read.php' method = 'post'>
+            <select id='select' name='className'>
+               <option value="PUBG" >PUBG</option>
+               <option value="Computer Science Principles" >Computer Science Principles</option>
+               <option value="Mobile OS Development" >Mobile OS Development</option>
+               <option value="Small Gas Engines" >Small Gas Engines</option>
+               <option value="Web Development" >Web Development</option>
+               <option value="RoS" >RoS</option>
+            </select>
+               <p></p>
+            <input name = 'read'   type = 'submit' value = 'Find Info'>
+         </form>
+      </center>
+   </body>
+</html>
